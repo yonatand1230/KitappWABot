@@ -14,15 +14,10 @@ client.on("ready", () => {
 
 client.on("message", message => {
 	if(message.body === "שלום!") {
-		client.sendMessage(message.from, "עגכטעכטגעכטעגטכ אני רובוט בופ ביפ באפ");
+		client.sendMessage(message.from, "שלום");
 	}
 });
 
-client.on("message", message => {
-	if(message.body === "דגה") {
-		client.sendMessage(message.from, "מה?");
-	}
-});
 
 client.on("message", async (msg) => {
     const mentions = await msg.getMentions();
